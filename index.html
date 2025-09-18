@@ -1,1 +1,171 @@
-1 test
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Three Hermes Publishing House</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+   
+    html,body{height:100%;margin:0;padding:0;font-family: "Times New Roman", Georgia, serif;background:#efe7d8;color:#1b1b1b;}
+    a{color:#003366;text-decoration:underline}
+    .container{
+      width:920px;
+      margin:18px auto;
+      border:4px solid #8b5a2b;
+      background:linear-gradient(#fbf7ef,#f0e7d2);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+
+    /* Header */
+    header{
+      padding:18px;
+      background:repeating-linear-gradient(90deg, rgba(0,0,0,0.02) 0 6px, transparent 6px 12px);
+      border-bottom:3px solid #c9a16b;
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+    .crest{
+      width:96px;height:96px;
+      background:#efe1c7;
+      border:3px solid #8b5a2b;
+      padding:8px;
+      border-radius:6px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      color:#5b3a21;
+      box-shadow:2px 2px 0 rgba(0,0,0,0.06);
+    }
+    .brand{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+    .brand h1{
+      margin:0;font-size:28px;color:#2b1f15;letter-spacing:0.6px;
+    }
+    .brand p{margin:2px 0 0 0;font-size:13px;color:#4a4037}
+
+    /* Navigation-style row */
+    .nav{
+      margin-left:auto;
+      font-size:13px;
+    }
+    .nav a{margin-left:12px;color:#4b2f1b;text-decoration:none;padding:6px 8px;border:1px solid transparent}
+    .nav a:hover{background:#f1e6d2;border-color:#d0b58a}
+
+    /* Main layout */
+    main{display:flex;gap:18px;padding:18px}
+    .left{flex:1}
+    .right{width:280px;background:#f6efe2;border-left:3px solid #e1cfa7;padding:12px;border-radius:2px}
+
+    /* Description */
+    .about{
+      background:#fffdf7;border:1px solid #e6d6b8;padding:14px;border-radius:3px;margin-bottom:14px;
+    }
+    .about h2{margin:0 0 8px 0;font-family: Georgia, "Times New Roman", serif;color:#2b1f15}
+    .about p{margin:0;color:#3b3128;line-height:1.5;font-size:14px}
+
+    /* Book list: classic card style */
+    .book-list{display:flex;flex-direction:column;gap:12px}
+    .book{
+      display:flex;gap:12px;padding:12px;border:1px solid #e0cfa7;background:#fffdf9;
+    }
+    .cover{
+      width:84px;height:120px;border:2px solid #d5c2a3;background:#efe6d6;display:flex;align-items:center;justify-content:center;
+      font-size:11px;color:#4b3a2a;font-weight:700;
+    }
+    .info{flex:1;display:flex;flex-direction:column}
+    .info h3{margin:0;font-size:16px;color:#2b1f18}
+    .author{font-size:13px;color:#4a3c33;margin-top:4px}
+    .summary{font-size:13px;color:#3b3027;margin-top:8px;line-height:1.4}
+    .meta{font-size:12px;color:#5c4a3b;margin-top:8px}
+    .actions{margin-top:auto;display:flex;gap:8px;align-items:center}
+    .btn{
+      background:#8b5a2b;color:#fff;padding:8px 10px;border-radius:3px;text-decoration:none;font-weight:700;font-size:13px;
+      border:2px solid #6f4323;box-shadow:1px 1px 0 rgba(0,0,0,0.12)
+    }
+    .btn:active{transform:translateY(1px)}
+    .price{font-size:13px;color:#3b3027;padding:6px 8px;border:1px dashed #e0cfa7;background:#fbf6ef;border-radius:3px}
+
+    /* Sidebar */
+    .right h3{margin:0 0 8px 0;color:#2b1f15}
+    .right p{font-size:13px;color:#40372f;line-height:1.45}
+    .right .list{margin-top:12px}
+    .right .list a{display:block;padding:6px 0;color:#3c2f25;text-decoration:underline}
+
+    /* Footer */
+    footer{padding:12px;text-align:center;font-size:13px;color:#4b3c33;border-top:3px solid #e1cfa7;background:linear-gradient(#f7efe1,#f0e6d0)}
+    @media (max-width:960px){
+      .container{width:94%}
+      main{flex-direction:column}
+      .right{width:100%}
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="document">
+    <header>
+      <div class="" aria-hidden="false"><img src="logo.png" width="150"></div>
+      <div class="brand">
+        <h1>The Three Hermes House</h1>
+        <p>Founded in 2025.</p>
+      </div>
+     
+    </header>
+
+    <main>
+      <section class="left" aria-labelledby="about-title">
+        <div class="about" id="about-title">
+          <h2>About Three Hermes</h2>
+          <p>Three Hermes is a publishing house that aims to put back in print historic works that are, today, mostly only known to scholars, often forgotten and inaccessible by the wider public. We have a focus on philosophy, meta-physics, magic, and religion.</p>
+        </div>
+
+        <div class="book-list" aria-label="Books">
+          <!-- Book 1 -->
+          <article class="book" aria-labelledby="b1">
+            <div class="cover" role="img" aria-label="Cover: Empires of the Sun">
+           
+<img src="https://m.media-amazon.com/images/I/614eUvIKq5L._SY522_.jpg" width="84" height="120">
+            </div>
+            <div class="info">
+              <h3 id="b1"> The Lapidary of Damigeron</h3>
+              <div class="author">Edited by Emilio Alexandrescu</div>
+              <div class="summary">Damigeron's Lapidary is a famous ancient lapidary, thought to be 2000 years old, which, in this edition, contains 50 stones, together with their descriptions, magical virtues, some talismans, and more. This work has been translated from the 1881 Latin edition of Eugenius Abel, who used multiple manuscripts to compile his version and aimed to publish the book without the omissions made by the people before him, and includes over 60 footnotes by him, together with his introduction. </div>
+              <div class="meta">Paperback • 52 pages • Modern English (Translated)</div>
+              <div class="actions">
+                <div class="price">Paperback</div>
+                <a class="btn" href="https://www.amazon.com/Lapidary-Damigeron-Lapidibus-English-Translation/dp/B0FMJYM2C9" target="_blank" rel="noopener">Buy on Amazon</a>
+              </div>
+            </div>
+          </article>
+
+       
+        </div>
+      </section>
+
+      <aside class="right" aria-labelledby="side-title">
+        <h3 id="side-title">Editor's Corner</h3>
+        <p>Monthly essays on recommended reading lists, archival finds, and other thoughts.</p>
+
+        <div class="list" aria-hidden="false">
+          <a href="#">Coming Soon</a>
+        </div>
+
+        <hr style="border:none;border-top:1px solid #e6d6b8;margin:12px 0">
+
+        <h3>Amazon Profile</h3>
+        <p>We currently publish our books exclusively on Amazon.</p>
+        <p><a href="https://www.amazon.com/s?i=stripbooks&rh=p_27%3AEmilio%2BAlexandrescu&s=relevancerank&text=Emilio+Alexandrescu&ref=dp_byline_sr_book_1">Browse our books on Amazon</a></p>
+      </aside>
+    </main>
+
+    <footer>
+      © <strong>The Three Hermes House</strong> — Ancient works in modern times.
+    </footer>
+  </div>
+</body>
+</html>
